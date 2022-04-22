@@ -19,3 +19,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           export
+          printenv
+
+      - name: print event
+        run: more /home/runner/work/_temp/_github_workflow/event.json
